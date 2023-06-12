@@ -13,6 +13,12 @@
 
 ### aspx QR Code 
 ```c#
+using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
+using ZXing;
+using ZXing.QrCode;
+
 protected void gvBarcodeList_RowDataBound(object sender, GridViewRowEventArgs e)
 {
     if (e.Row.RowType == DataControlRowType.DataRow)
